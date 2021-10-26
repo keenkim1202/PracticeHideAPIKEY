@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZ5-0n-WCP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="pqw-o6-5UR">
+            <objects>
+                <viewController id="IZ5-0n-WCP" customClass="WeatherViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A51-a7-QSD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="wWw-Wg-6WV">
+                                <rect key="frame" x="87" y="153" width="240" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pti-XL-xly">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="178.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1zq-wq-6gH">
+                                                <rect key="frame" x="10" y="63" width="220" height="52.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 위치는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7i-9d-p1U">
+                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00시 00동" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er7-Uj-5bX">
+                                                        <rect key="frame" x="0.0" y="32" width="220" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.78400663719999997" green="0.96848052740000001" blue="0.73449137460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="1zq-wq-6gH" firstAttribute="centerX" secondItem="pti-XL-xly" secondAttribute="centerX" id="0vY-95-40i"/>
+                                            <constraint firstItem="1zq-wq-6gH" firstAttribute="centerY" secondItem="pti-XL-xly" secondAttribute="centerY" id="Ulb-Dj-6Jb"/>
+                                            <constraint firstItem="1zq-wq-6gH" firstAttribute="leading" secondItem="pti-XL-xly" secondAttribute="leading" constant="10" id="eeS-UH-imZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="1zq-wq-6gH" secondAttribute="trailing" constant="10" id="fNb-Ra-HWd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usr-RG-64M">
+                                        <rect key="frame" x="0.0" y="210.5" width="240" height="179"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mxw-6j-yGM">
+                                                <rect key="frame" x="10" y="66.5" width="220" height="46.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 온도는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo6-Ap-Vkl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nu7-7K-ZUM">
+                                                        <rect key="frame" x="0.0" y="26" width="220" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemPurpleColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.8645202773997227" blue="0.99044244442315288" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mxw-6j-yGM" secondAttribute="trailing" constant="10" id="8cT-gh-Yc0"/>
+                                            <constraint firstItem="mxw-6j-yGM" firstAttribute="centerY" secondItem="usr-RG-64M" secondAttribute="centerY" id="Vqd-g9-Qps"/>
+                                            <constraint firstItem="mxw-6j-yGM" firstAttribute="leading" secondItem="usr-RG-64M" secondAttribute="leading" constant="10" id="rD3-24-brb"/>
+                                            <constraint firstItem="mxw-6j-yGM" firstAttribute="centerX" secondItem="usr-RG-64M" secondAttribute="centerX" id="uw7-fC-ufQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GT4-XJ-ZwW">
+                                        <rect key="frame" x="0.0" y="421.5" width="240" height="178.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8PP-EZ-Ssz">
+                                                <rect key="frame" x="10" y="59.5" width="220" height="59.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 습도는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wst-0Q-YJN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thn-6l-Wyh">
+                                                        <rect key="frame" x="0.0" y="39" width="220" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.8745296987385156" blue="0.79262006543919961" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="8PP-EZ-Ssz" secondAttribute="trailing" constant="10" id="0nn-xT-9jD"/>
+                                            <constraint firstItem="8PP-EZ-Ssz" firstAttribute="leading" secondItem="GT4-XJ-ZwW" secondAttribute="leading" constant="10" id="ZG8-bi-JkS"/>
+                                            <constraint firstItem="8PP-EZ-Ssz" firstAttribute="centerY" secondItem="GT4-XJ-ZwW" secondAttribute="centerY" id="pwT-4b-APg"/>
+                                            <constraint firstItem="8PP-EZ-Ssz" firstAttribute="centerX" secondItem="GT4-XJ-ZwW" secondAttribute="centerX" id="wHX-TO-ibV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w09-64-nuo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wWw-Wg-6WV" firstAttribute="top" secondItem="w09-64-nuo" secondAttribute="top" constant="109" id="Cuf-mU-1jv"/>
+                            <constraint firstItem="wWw-Wg-6WV" firstAttribute="centerX" secondItem="w09-64-nuo" secondAttribute="centerX" id="SOZ-Zm-6yB"/>
+                            <constraint firstItem="wWw-Wg-6WV" firstAttribute="leading" secondItem="w09-64-nuo" secondAttribute="leading" constant="87" id="XdO-b5-zrn"/>
+                            <constraint firstItem="w09-64-nuo" firstAttribute="trailing" secondItem="wWw-Wg-6WV" secondAttribute="trailing" constant="87" id="biO-jq-4hQ"/>
+                            <constraint firstItem="w09-64-nuo" firstAttribute="bottom" secondItem="wWw-Wg-6WV" secondAttribute="bottom" constant="109" id="kZR-Wr-aAh"/>
+                            <constraint firstItem="wWw-Wg-6WV" firstAttribute="centerY" secondItem="w09-64-nuo" secondAttribute="centerY" id="lgR-0E-M9D"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eb1-J4-LEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
