@@ -120,6 +120,11 @@
                             <constraint firstItem="wWw-Wg-6WV" firstAttribute="centerY" secondItem="w09-64-nuo" secondAttribute="centerY" id="lgR-0E-M9D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentHumiditylabel" destination="thn-6l-Wyh" id="g37-pt-Apd"/>
+                        <outlet property="currentTempLabel" destination="nu7-7K-ZUM" id="hae-wP-thp"/>
+                        <outlet property="locationLabel" destination="er7-Uj-5bX" id="kMG-xN-ez7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eb1-J4-LEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
