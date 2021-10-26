@@ -11,7 +11,7 @@
         <!--Weather View Controller-->
         <scene sceneID="pqw-o6-5UR">
             <objects>
-                <viewController id="IZ5-0n-WCP" customClass="WeatherViewController" sceneMemberID="viewController">
+                <viewController id="IZ5-0n-WCP" customClass="WeatherViewController" customModule="PracticeHideAPIKEY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A51-a7-QSD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,9 +121,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="currentHumiditylabel" destination="thn-6l-Wyh" id="g37-pt-Apd"/>
-                        <outlet property="currentTempLabel" destination="nu7-7K-ZUM" id="hae-wP-thp"/>
-                        <outlet property="locationLabel" destination="er7-Uj-5bX" id="kMG-xN-ez7"/>
+                        <outlet property="currentHumiditylabel" destination="thn-6l-Wyh" id="U8B-hI-VxB"/>
+                        <outlet property="currentTempLabel" destination="nu7-7K-ZUM" id="1D3-UB-AEK"/>
+                        <outlet property="locationLabel" destination="er7-Uj-5bX" id="BjF-L5-5cM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eb1-J4-LEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

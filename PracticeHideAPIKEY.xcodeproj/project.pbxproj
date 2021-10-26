@@ -13,9 +13,10 @@
 		1CEB4E392727BD1F00A4274C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CEB4E372727BD1F00A4274C /* Main.storyboard */; };
 		1CEB4E3B2727BD2000A4274C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEB4E3A2727BD2000A4274C /* Assets.xcassets */; };
 		1CEB4E3E2727BD2000A4274C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CEB4E3C2727BD2000A4274C /* LaunchScreen.storyboard */; };
-		1CEB4E462727BEC000A4274C /* APIKEY.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CEB4E452727BEC000A4274C /* APIKEY.plist */; };
+		1CEB4E462727BEC000A4274C /* WeatherInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CEB4E452727BEC000A4274C /* WeatherInfo.plist */; };
 		1CEB4E492727BF2D00A4274C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEB4E482727BF2D00A4274C /* Alamofire */; };
 		1CEB4E4C2727BF3F00A4274C /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEB4E4B2727BF3F00A4274C /* SwiftyJSON */; };
+		1CEB4E4E2727C82200A4274C /* HIDEAPIKEY++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB4E4D2727C82200A4274C /* HIDEAPIKEY++Bundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		1CEB4E3A2727BD2000A4274C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CEB4E3D2727BD2000A4274C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CEB4E3F2727BD2000A4274C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CEB4E452727BEC000A4274C /* APIKEY.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKEY.plist; sourceTree = "<group>"; };
+		1CEB4E452727BEC000A4274C /* WeatherInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WeatherInfo.plist; sourceTree = "<group>"; };
+		1CEB4E4D2727C82200A4274C /* HIDEAPIKEY++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HIDEAPIKEY++Bundle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +67,12 @@
 				1CEB4E312727BD1F00A4274C /* AppDelegate.swift */,
 				1CEB4E332727BD1F00A4274C /* SceneDelegate.swift */,
 				1CEB4E352727BD1F00A4274C /* WeatherViewController.swift */,
+				1CEB4E4D2727C82200A4274C /* HIDEAPIKEY++Bundle.swift */,
 				1CEB4E372727BD1F00A4274C /* Main.storyboard */,
 				1CEB4E3A2727BD2000A4274C /* Assets.xcassets */,
 				1CEB4E3C2727BD2000A4274C /* LaunchScreen.storyboard */,
 				1CEB4E3F2727BD2000A4274C /* Info.plist */,
-				1CEB4E452727BEC000A4274C /* APIKEY.plist */,
+				1CEB4E452727BEC000A4274C /* WeatherInfo.plist */,
 			);
 			path = PracticeHideAPIKEY;
 			sourceTree = "<group>";
@@ -141,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CEB4E3E2727BD2000A4274C /* LaunchScreen.storyboard in Resources */,
-				1CEB4E462727BEC000A4274C /* APIKEY.plist in Resources */,
+				1CEB4E462727BEC000A4274C /* WeatherInfo.plist in Resources */,
 				1CEB4E3B2727BD2000A4274C /* Assets.xcassets in Resources */,
 				1CEB4E392727BD1F00A4274C /* Main.storyboard in Resources */,
 			);
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEB4E4E2727C82200A4274C /* HIDEAPIKEY++Bundle.swift in Sources */,
 				1CEB4E362727BD1F00A4274C /* WeatherViewController.swift in Sources */,
 				1CEB4E322727BD1F00A4274C /* AppDelegate.swift in Sources */,
 				1CEB4E342727BD1F00A4274C /* SceneDelegate.swift in Sources */,
