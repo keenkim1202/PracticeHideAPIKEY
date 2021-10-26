@@ -11,7 +11,7 @@ import SwiftyJSON
 import CoreLocation
 
 class WeatherViewController: UIViewController {
-
+  
   // MARK: - Properties
   var latitude: Double = 37.65469539112308
   var longitude: Double = 127.0605780377212
@@ -30,9 +30,9 @@ class WeatherViewController: UIViewController {
     fetchWeatherInfomation()
   }
   
-  // MARK: Fetching Datas
+  // MARK: - Fetching Datas
   func fetchWeatherInfomation() {
-
+    
     let appid = Bundle.main.apiKey
     let url = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(appid)"
     
@@ -51,7 +51,7 @@ class WeatherViewController: UIViewController {
     }
   }
   
-  // MARK: Get Address from Lattitude & Longitude
+  // MARK: - Get Address from Lattitude & Longitude
   func getCoordinte(_ coordinate: CLLocation) {
     let geoCoder = CLGeocoder()
     
